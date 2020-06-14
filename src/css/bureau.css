@@ -1,0 +1,66 @@
+body {
+    margin: auto;
+    font: italic small-caps bold 15px/2 cursive;
+    background-color: rgb(63, 34, 35)
+}
+
+.bureau {
+    background-image: url(../img/table.png);
+    width: 80%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin: auto;
+    position: relative;
+}
+
+.bureau img {
+    transition: 1s;
+}
+
+.bureau a img:hover {
+    box-shadow: 0px 0px 70px 0px rgb(67, 147, 217);
+    background-color: rgba(67, 147, 217, 0.4);
+}
+
+#aimant {
+    border-radius: 20px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    width: 10%;
+}
+
+#pc {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+    width: 15%;
+}
+
+#calculatrice {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 8%;
+}
+
+#livre_soma {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+    width: 10%;
+}
+
+#livre_note {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    border-radius: 10px;
+    width: 15%;
+}

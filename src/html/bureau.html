@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Projet Web L2</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../css/bureau.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
+    <script src="../js/header.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <ul class="topnav" id="menu">
+            <li id="button_menu"><img src="../img/menu.png" alt="button_menu" width="90" onclick="toggleHeader()"></li>
+            <li>
+                <a href="index.html"><img src="../img/menu_home.png" alt="menu_home" width="90"></a>
+            </li>
+            <li>
+                <a href="livre_com.html"> <img onmouseover="mouseOver(livre_soma.id)" onmouseout="mouseOut(livre_soma.id)" id="general" src="../img/menu_general.png" alt="menu_general" width="90"></a>
+            </li>
+            <li>
+                <a href="livre_info.html"><img onmouseover="mouseOver(pc.id)" onmouseout="mouseOut(pc.id)" id="informatique" src="../img/menu_informatique.png" alt="menu_informatique" width="90"></a>
+            </li>
+            <li>
+                <a href="livre_math.html"><img onmouseover="mouseOver(calculatrice.id)" onmouseout="mouseOut(calculatrice.id)" id="math" src="../img/menu_math.png" alt="menu_math" width="90"></a>
+            </li>
+            <li>
+                <a href="livre_physique.html"><img onmouseover="mouseOver(aimant.id)" onmouseout="mouseOut(aimant.id)" id="physique" src="../img/menu_physique.png" alt="menu_physique" width="90"></a>
+            </li>
+            <li>
+                <a href="info.html"><img src="../img/menu_info.png" alt="menu_info" width="90"></a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="bureau">
+            <a href="livre_physique.html"> <img onclick="toggleHeader()" id="aimant" src="../img/home_physique.png" alt="home_physique" width="100"> </a>
+            <a href="livre_info.html"> <img id="pc" src="../img/home_informatique.png" alt="home_informatique" width="150"></a>
+            <a href="livre_math.html"> <img id="calculatrice" src="../img/home_mathematique.png" alt="home_mathematique" width="100"></a>
+            <a href="livre_com.html"> <img id="livre_soma" src="../img/home_communication.png" alt="home_communication" width="100"></a>
+            <img id="livre_note" src="../img/home_livre.png" alt="home_livre" width="150">
+        </div>
+    </main>
+
+    <footer>
+        <p>Membre</p>
+        <p>Séverin Jean-Benoit Robin</p>
+        <p>© 2020 Les statisticiens. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Projet Web L2</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../css/livre.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
+    <script>
+        var ueList = ['MPI', 'C++', 'WEB'];
+        var ue = 'INFORMATIQUE';
+    </script>
+    <script src="../js/calcul.js"></script>
+    <script src="../js/header.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul class="topnav" id="menu">
+            <li id="button_menu"><img src="../img/menu.png" alt="menu" width="90" onclick="toggleHeader()"></li>
+            <li>
+                <a href="index.html"><img src="../img/menu_home.png" alt="menu_home" width="90"></a>
+            </li>
+            <li>
+                <a href="bureau.html"><img src="../img/menu_bureau.png" alt="menu_bureau" width="90"></a>
+            </li>
+            <li>
+                <a href="info.html"><img src="../img/menu_info.png" alt="menu_info" width="90"></a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="zone_livre">
+        <div class="livre">
+            <div class="page_d2">
+                <div class="page_d1">
+                    <div class="page_d">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/logo_efrei.png" alt="logo_efrei" width="55"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>formation</td>
+                                <td>coeff</td>
+                                <td>type</td>
+                            </tr>
+                            <tr class="gris-ue">
+                                <td>UE INFORMATIQUE</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <!-- Mathématiques pour l'informatique -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="MPI_moyenne_coef">3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan=4>Mathématiques pour l'informatique</td>
+                                <td id="MPI_CE_coef">0.15</td>
+                                <td>CE</td>
+                            </tr>
+                            <tr>
+                                <td id="MPI_CTP_coef">0.15</td>
+                                <td>CTP</td>
+                            </tr>
+                            <tr>
+                                <td id="MPI_DE_coef">0.35</td>
+                                <td>DE</td>
+                            </tr>
+                            <tr>
+                                <td id="MPI_PRJ_coef">0.35</td>
+                                <td>PRJ</td>
+                            </tr>
+                            <!-- Programmation en langage C++ -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="C++_moyenne_coef">2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan=2>C++</td>
+                                <td id="C++_CTP_coef">0.5</td>
+                                <td>CTP</td>
+                            </tr>
+                            <tr>
+                                <td id="C++_DE_coef">0.5</td>
+                                <td>DE</td>
+                            </tr>
+
+                            <!-- WEB -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="WEB_moyenne_coef">3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan=2>WEB</td>
+                                <td id="WEB_PRJ_coef">0.5</td>
+                                <td>PRJ</td>
+                            </tr>
+                            <tr>
+                                <td id="WEB_TP_coef">0.5</td>
+                                <td>TP</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="page_g2">
+                <div class="page_g1">
+                    <div class="page_g">
+                        <div class="ligne">
+                            <table>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="bureau.html"><img id="arrow" src="../img/icon_arrow_back.png" alt="icon_arrow_back" height="21"></a>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>note</td>
+                                    <td>5</td>
+                                    <td>10</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gris-ue">
+                                    <td id="INFORMATIQUE_moyenne">0</td>
+                                    <td id="INFORMATIQUE_moyenne_5">5</td>
+                                    <td id="INFORMATIQUE_moyenne_10">10</td>
+                                    <td id="INFORMATIQUE_moyenne_15">15</td>
+                                </tr>
+                                <!-- Mathématiques pour l'informatique -->
+                                <tr class="gris">
+                                    <td id="MPI_moyenne">0</td>
+                                    <td id="MPI_moyenne_5">5</td>
+                                    <td id="MPI_moyenne_10">10</td>
+                                    <td id="MPI_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="MPI_CE" type="text" placeholder="note" /></td>
+                                    <td id="MPI_CE_5" class="red">5</td>
+                                    <td id="MPI_CE_10" class="yellow">10</td>
+                                    <td id="MPI_CE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="MPI_DE" type="text" placeholder="note" /></td>
+                                    <td id="MPI_DE_5" class="red">5</td>
+                                    <td id="MPI_DE_10" class="yellow">10</td>
+                                    <td id="MPI_DE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="MPI_CTP" type="text" placeholder="note" /></td>
+                                    <td id="MPI_CTP_5" class="red">5</td>
+                                    <td id="MPI_CTP_10" class="yellow">10</td>
+                                    <td id="MPI_CTP_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="MPI_PRJ" type="text" placeholder="note" /></td>
+                                    <td id="MPI_PRJ_5" class="red">5</td>
+                                    <td id="MPI_PRJ_10" class="yellow">10</td>
+                                    <td id="MPI_PRJ_15" class="green">15</td>
+                                </tr>
+                                <!-- Programmation en langage C++ -->
+                                <tr class="gris">
+                                    <td id="C++_moyenne">0</td>
+                                    <td id="C++_moyenne_5">5</td>
+                                    <td id="C++_moyenne_10">10</td>
+                                    <td id="C++_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="C++_CTP" type="text" placeholder="note" /></td>
+                                    <td id="C++_CTP_5" class="red">5</td>
+                                    <td id="C++_CTP_10" class="yellow">10</td>
+                                    <td id="C++_CTP_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="C++_DE" type="text" placeholder="note" /></td>
+                                    <td id="C++_DE_5" class="red">5</td>
+                                    <td id="C++_DE_10" class="yellow">10</td>
+                                    <td id="C++_DE_15" class="green">15</td>
+                                </tr>
+                                <!-- WEB -->
+                                <tr class="gris">
+                                    <td id="WEB_moyenne">5</td>
+                                    <td id="WEB_moyenne_5">5</td>
+                                    <td id="WEB_moyenne_10">10</td>
+                                    <td id="WEB_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="WEB_PRJ" type="text" placeholder="note" /></td>
+                                    <td id="WEB_PRJ_5" class="red">5</td>
+                                    <td id="WEB_PRJ_10" class="yellow">10</td>
+                                    <td id="WEB_PRJ_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="WEB_TP" type="text" placeholder="note" /></td>
+                                    <td id="WEB_TP_5" class="red">5</td>
+                                    <td id="WEB_TP_10" class="yellow">10</td>
+                                    <td id="WEB_TP_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="animation"></div>
+
+    <footer>
+        <p>Membre</p>
+        <p>Séverin Jean-Benoit Robin</p>
+        <p>© 2020 Les statisticiens. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        createUpdate('MPI', ['CE', 'CTP', 'DE', 'PRJ']);
+        createUpdate('C++', ['CTP', 'DE']);
+        createUpdate('WEB', ['PRJ', 'TP']);
+    </script>
+</body>
+
+</html>

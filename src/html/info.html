@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Projet Web L2</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../css/livre.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
+    <script src="../js/header.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <ul class="topnav" id="menu">
+            <li id="button_menu"><img src="../img/menu.png" alt="menu" width="90" onclick="toggleHeader()"></li>
+            <li>
+                <a href="index.html"><img src="../img/menu_home.png" alt="menu_home" width="90"></a>
+            </li>
+            <li>
+                <a href="bureau.html"><img src="../img/menu_bureau.png" alt="menu_bureau" width="90"></a>
+            </li>
+            <li>
+                <a href="info.html"><img src="../img/menu_info.png" alt="menu_info" width="90"></a>
+            </li>
+        </ul>
+    </header>
+    <div class="zone_livre" id="nous">
+        <div class="livre">
+            <div class="page_d2">
+                <div onclick="shownous()" class="marque_page marque_page1">nous</div>
+                <div class="page_d1">
+                    <div class="page_d">
+                        <div class="titre">
+                            <p>qui somme nous</p>
+                        </div>
+                        <div class="centre">
+                            <div onmouseover="mouseOver(personne1.id)" onmouseout="mouseOut(personne1.id)" class="img">
+                                <img src="../img/jbc.jpg" alt="jbc" width="200" class="profil">
+                                <p>developpeur</p>
+                                <img class="click" src="../img/click.png" alt="click" width="10">
+                            </div>
+                            <div onmouseover="mouseOver(personne2.id)" onmouseout="mouseOut(personne2.id)" class="img">
+                                <img src="../img/severin.png" alt="severin" width="200" class="profil">
+                                <p>developpeur</p>
+                                <img class="click" src="../img/click.png" alt="click" width="10">
+                            </div>
+                            <div onmouseover="mouseOver(personne3.id)" onmouseout="mouseOut(personne3.id)" class="img">
+                                <img src="../img/robin.jpg" alt="robin" width="200" class="profil">
+                                <p>developpeur</p>
+                                <img class="click" src="../img/click.png" alt="click" width="10">
+                            </div>
+                            <br><br><br><br>
+                        </div>
+                        <div class="centre">
+                            <p class="text">que faut t'il savoir sur l'équipe ?</p>
+                        </div>
+                        <div class="centre">
+                            <p class="text">nous sommes une équipe composée de 3 jeunes étudiants actuellement en 2 ème année d'études d'ingénieur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page_g2">
+                <div onclick="showprojet()" class="marque_page marque_page2">projet</div>
+                <div class="page_g1">
+                    <div class="page_g">
+                        <div id="personne0" class="personne">
+                            <br><br><br><br><br><br><br><br>
+                            <div class="titre"> passez votre curseur sur nos photos pour nous découvrir !</div>
+                        </div>
+                        <div id="personne1" class="personne">
+                            <div class="titre"> Jean-Benoît</div>
+                            <div class="centre">
+                                <div class="img"><img src="../img/jbc.jpg" alt="jbc" width="200" class="profil"> </div>
+                                <p class="text">21 ans | Homme | 1.74 m</p>
+                            </div>
+                            <p class="text">qui es-tu ?</p>
+                            <p class="text">je suis jeune et dynamique</p>
+                            <p class="text">ton et tes rôle(s) ?</p>
+                            <p class="text">rendre le site le plus clair et compréhensible pour les utilisateurs</p>
+                            <p class="text">tes hobbies ? </p>
+                            <p class="text">apprendre toutes sortes de choses</p>
+                        </div>
+                        <div id="personne2" class="personne">
+                            <div class="titre"> Séverin</div>
+                            <div class="centre">
+                                <div class="img"><img src="../img/severin.png" alt="severin" width="200" class="profil"> </div>
+                                <p class="text">21 ans | Homme</p>
+                            </div>
+                            <p class="text">qui es-tu ?</p>
+                            <p class="text">je suis jeune et dynamique</p>
+                            <p class="text">ton et tes rôle(s) ?</p>
+                            <p class="text">faire en sorte que le design soit le plus coordonné possible avec le style du site</p>
+                            <p class="text">tes hobbies ? </p>
+                            <p class="text">le java, bien plus qu'une passion </p>
+                        </div>
+                        <div id="personne3" class="personne">
+                            <div class="titre"> Robin</div>
+                            <div class="centre">
+                                <div class="img"><img src="../img/robin.jpg" alt="robin" width="200" class="profil"> </div>
+                                <p class="text">19 ans | Homme | 1.66 m</p>
+                            </div>
+                            <p class="text">qui es-tu ?</p>
+                            <p class="text">je suis jeune et dynamique</p>
+                            <p class="text">ton et tes rôle(s) ?</p>
+                            <p class="text">trouver les idées liées au projet</p>
+                            <p class="text">tes hobbies ? </p>
+                            <p class="text">le sports avant tout </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zone_livre" id="projet">
+        <div class="livre">
+            <div class="page_d2">
+                <div onclick="shownous()" class="marque_page marque_page1">nous</div>
+                <div class="page_d1">
+                    <div class="page_d">
+                        <div class="titre">
+                            <p>quelle est notre projet ?</p>
+                        </div>
+                        <div class="centre">
+                            <p class="text">Le but de notre projet est de permettre aux étudiants de pouvoir calculer leurs moyennes dans les différents UE de leur S4, afin d'analyser leurs notes. Cela leur permet également de regarder leurs chances de passer au prochain
+                                semestre sans rattrapage. En effet, c'est important de pouvoir se préparer au pire afin de pouvoir anticiper les révisions.</p>
+                            <img id="info_help" src="../img/info_help.png" alt="info_help">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page_g2">
+                <div onclick="showprojet()" class="marque_page marque_page2">projet</div>
+                <div class="page_g1">
+                    <div class="page_g">
+                        <div class="titre">
+                            <p>notre vision futur</p>
+                        </div>
+                        <div class="centre">
+                            <p class="text"> Pour le moment, nous n'avons pas prévu d'arrêter cette idée de site de sitôt, et nous avons même trouvé des améliorations futures qui y seront ajoutées prochainement afin qu'il soit disponible dès l'année prochaine.<br><br>Amélioration
+                                à venir : </p>
+                            <p class="text">
+                                Adapter l’analyse à toutes les années (S1,S2,…). <br> Enregistrer les notes dans des cookies. <br> Analyser son classement dans sa promotion en fonction de sa moyenne. <br> Option LV2 prise en compte ou non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="animation"></div>
+
+    <footer>
+        <p>Membre</p>
+        <p>Séverin Jean-Benoit Robin</p>
+        <p>© 2020 Les statisticiens. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function mouseOver(id) {
+            document.getElementById("personne0").style.display = "none";
+            document.getElementById("personne1").style.display = "none";
+            document.getElementById("personne2").style.display = "none";
+            document.getElementById("personne3").style.display = "none";
+            document.getElementById(id).style.display = "block";
+        }
+
+        function shownous() {
+            document.getElementById("nous").style.display = "flex";
+            document.getElementById("projet").style.display = "none";
+            document.querySelectorAll(".marque_page1").forEach((marque) => {
+                marque.style.zIndex = "1";
+            });
+            document.querySelectorAll(".marque_page2").forEach((marque) => {
+                marque.style.zIndex = "0";
+            });
+        }
+
+        function showprojet() {
+            document.getElementById("nous").style.display = "none";
+            document.getElementById("projet").style.display = "flex";
+            document.querySelectorAll(".marque_page1").forEach((marque) => {
+                marque.style.zIndex = "0";
+            });
+            document.querySelectorAll(".marque_page2").forEach((marque) => {
+                marque.style.zIndex = "1";
+            });
+        }
+    </script>
+</body>
+
+</html>

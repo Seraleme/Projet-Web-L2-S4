@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Projet Web L2</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../css/livre.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
+    <script>
+        var ueList = ['ARGUMENTATION', 'ANGLAIS', 'LV2', 'ORGANISATION'];
+        var ue = 'GENERAL';
+    </script>
+    <script src="../js/calcul.js"></script>
+    <script src="../js/header.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul class="topnav" id="menu">
+            <li id="button_menu"><img src="../img/menu.png" alt="menu" width="90" onclick="toggleHeader()"></li>
+            <li>
+                <a href="index.html"><img src="../img/menu_home.png" alt="menu_home" width="90"></a>
+            </li>
+            <li>
+                <a href="bureau.html"><img src="../img/menu_bureau.png" alt="menu_bureau" width="90"></a>
+            </li>
+            <li>
+                <a href="info.html"><img src="../img/menu_info.png" alt="menu_info" width="90"></a>
+            </li>
+        </ul>
+    </header>
+    <div class="zone_livre">
+        <div class="livre">
+            <div class="page_d2">
+                <div class="page_d1">
+                    <div class="page_d">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/logo_efrei.png" alt="logo_efrei" width="55"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>formation</td>
+                                <td>coeff</td>
+                                <td>type</td>
+                            </tr>
+                            <tr class="gris-ue">
+                                <td>UE GENERAL</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <!-- FRANCAIS -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="ARGUMENTATION_moyenne_coef">2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan=3>ARGUMENTATION</td>
+                                <td id="ARGUMENTATION_CE_coef">0.2</td>
+                                <td>CE</td>
+                            </tr>
+                            <tr>
+                                <td id="ARGUMENTATION_DE_coef">0.4</td>
+                                <td>DE</td>
+                            </tr>
+                            <tr>
+                                <td id="ARGUMENTATION_CTP_coef">0.4</td>
+                                <td>CTP</td>
+                            </tr>
+                            <!-- ANGLAIS -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="ANGLAIS_moyenne_coef">2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan=4>ANGLAIS</td>
+                                <td id="ANGLAIS_CO_coef">0.2</td>
+                                <td>CO</td>
+                            </tr>
+                            <tr>
+                                <td id="ANGLAIS_DE_coef">0.5</td>
+                                <td>DE</td>
+                            </tr>
+                            <tr>
+                                <td id="ANGLAIS_TD20_coef">0.15</td>
+                                <td>TD20</td>
+                            </tr>
+                            <tr>
+                                <td id="ANGLAIS_TP_coef">0.15</td>
+                                <td>TP</td>
+                            </tr>
+                            <!--LV2 -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="LV2_moyenne_coef">1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan=3>LV2</td>
+                                <td id="LV2_CTP_coef">0.35</td>
+                                <td>CTP</td>
+                            </tr>
+                            <tr>
+                                <td id="LV2_TP_coef">0.35</td>
+                                <td>TP</td>
+                            </tr>
+                            <tr>
+                                <td id="LV2_CO_coef">0.3</td>
+                                <td>CO</td>
+                            </tr>
+                            <!-- ORGANISATION -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="ORGANISATION_moyenne_coef">2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ORGANISATION</td>
+                                <td id="ORGANISATION_PRJ_coef">1</td>
+                                <td>PRJ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="page_g2">
+                <div class="page_g1">
+                    <div class="page_g">
+                        <div class="ligne">
+                            <table>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="bureau.html"><img id="arrow" src="../img/icon_arrow_back.png" alt="icon_arrow_back" height="21"></a>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>note</td>
+                                    <td>5</td>
+                                    <td>10</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gris-ue">
+                                    <td id="GENERAL_moyenne">0</td>
+                                    <td id="GENERAL_moyenne_5">5</td>
+                                    <td id="GENERAL_moyenne_10">10</td>
+                                    <td id="GENERAL_moyenne_15">15</td>
+                                </tr>
+                                <!-- FRANCAIS -->
+                                <tr class="gris">
+                                    <td id="ARGUMENTATION_moyenne">0</td>
+                                    <td id="ARGUMENTATION_moyenne_5">5</td>
+                                    <td id="ARGUMENTATION_moyenne_10">10</td>
+                                    <td id="ARGUMENTATION_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="ARGUMENTATION_CE" type="text" placeholder="note" /></td>
+                                    <td id="ARGUMENTATION_CE_5" class="red">5</td>
+                                    <td id="ARGUMENTATION_CE_10" class="yellow">10</td>
+                                    <td id="ARGUMENTATION_CE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="ARGUMENTATION_DE" type="text" placeholder="note" /></td>
+                                    <td id="ARGUMENTATION_DE_5" class="red">5</td>
+                                    <td id="ARGUMENTATION_DE_10" class="yellow">10</td>
+                                    <td id="ARGUMENTATION_DE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="ARGUMENTATION_CTP" type="text" placeholder="note" /></td>
+                                    <td id="ARGUMENTATION_CTP_5" class="red">5</td>
+                                    <td id="ARGUMENTATION_CTP_10" class="yellow">10</td>
+                                    <td id="ARGUMENTATION_CTP_15" class="green">15</td>
+                                </tr>
+                                <!-- ANGLAIS -->
+                                <tr class="gris">
+                                    <td id="ANGLAIS_moyenne">0</td>
+                                    <td id="ANGLAIS_moyenne_5">5</td>
+                                    <td id="ANGLAIS_moyenne_10">10</td>
+                                    <td id="ANGLAIS_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="ANGLAIS_CO" type="text" placeholder="note" /></td>
+                                    <td id="ANGLAIS_CO_5" class="red">5</td>
+                                    <td id="ANGLAIS_CO_10" class="yellow">10</td>
+                                    <td id="ANGLAIS_CO_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="ANGLAIS_DE" type="text" placeholder="note" /></td>
+                                    <td id="ANGLAIS_DE_5" class="red">5</td>
+                                    <td id="ANGLAIS_DE_10" class="yellow">10</td>
+                                    <td id="ANGLAIS_DE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="ANGLAIS_TD20" type="text" placeholder="note" /></td>
+                                    <td id="ANGLAIS_TD20_5" class="red">5</td>
+                                    <td id="ANGLAIS_TD20_10" class="yellow">10</td>
+                                    <td id="ANGLAIS_TD20_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="ANGLAIS_TP" type="text" placeholder="note" /></td>
+                                    <td id="ANGLAIS_TP_5" class="red">5</td>
+                                    <td id="ANGLAIS_TP_10" class="yellow">10</td>
+                                    <td id="ANGLAIS_TP_15" class="green">15</td>
+                                </tr>
+                                <!--LV2 -->
+                                <tr class="gris">
+                                    <td id="LV2_moyenne">0</td>
+                                    <td id="LV2_moyenne_5">5</td>
+                                    <td id="LV2_moyenne_10">10</td>
+                                    <td id="LV2_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="LV2_CTP" type="text" placeholder="note" /></td>
+                                    <td id="LV2_CTP_5" class="red">5</td>
+                                    <td id="LV2_CTP_10" class="yellow">10</td>
+                                    <td id="LV2_CTP_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="LV2_TP" type="text" placeholder="note" /></td>
+                                    <td id="LV2_TP_5" class="red">5</td>
+                                    <td id="LV2_TP_10" class="yellow">10</td>
+                                    <td id="LV2_TP_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="LV2_CO" type="text" placeholder="note" /></td>
+                                    <td id="LV2_CO_5" class="red">5</td>
+                                    <td id="LV2_CO_10" class="yellow">10</td>
+                                    <td id="LV2_CO_15" class="green">15</td>
+                                </tr>
+                                <!-- ORGANISATION -->
+                                <tr class="gris">
+                                    <td id="ORGANISATION_moyenne">0</td>
+                                    <td id="ORGANISATION_moyenne_5"> 5</td>
+                                    <td id="ORGANISATION_moyenne_10">10</td>
+                                    <td id="ORGANISATION_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="ORGANISATION_PRJ" type="text" placeholder="note" /></td>
+                                    <td id="ORGANISATION_PRJ_5" class="red">5</td>
+                                    <td id="ORGANISATION_PRJ_10" class="yellow">10</td>
+                                    <td id="ORGANISATION_PRJ_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="animation"></div>
+
+    <footer>
+        <p>Membre</p>
+        <p>Séverin Jean-Benoit Robin</p>
+        <p>© 2020 Les statisticiens. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        createUpdate('ARGUMENTATION', ['CE', 'DE', 'CTP']);
+        createUpdate('ANGLAIS', ['CO', 'DE', 'TD20', 'TP']);
+        createUpdate('LV2', ['CTP', 'TP', 'CO']);
+        createUpdate('ORGANISATION', ['PRJ']);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+html {
+    height: 100%
+}
+
+body {
+    font: italic small-caps bold 15px/2 cursive;
+    height: 100%;
+    background-color: rgb(63, 34, 35);
+}
+
+.zone_livre {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.livre {
+    background-color: brown;
+    width: 80%;
+    max-width: 1450px;
+    min-width: 300px;
+    height: 90%;
+    min-height: 280px;
+    max-height: 1250px;
+    border-bottom: 2px solid;
+    border-radius: 10px;
+    box-shadow: 4px 11px 25px 0px rgba(0, 0, 0, 0.67);
+    display: flex;
+    padding: 10px;
+    margin: auto;
+}
+
+.marque_page {
+    height: 100px;
+    width: 80px;
+    background-color: red;
+    border-radius: 20px;
+    position: absolute;
+    cursor: pointer;
+    text-align: center
+}
+
+.marque_page:hover {
+    box-shadow: 0px 0px 22px 21px rgba(255, 255, 255, 1);
+}
+
+.marque_page1 {
+    top: -40px;
+    right: 10%;
+    z-index: 1;
+}
+
+.marque_page2 {
+    top: -40px;
+    left: 10%;
+}
+
+.page_d2,
+.page_d1,
+.page_d,
+.page_g2,
+.page_g1,
+.page_g {
+    display: table;
+    border: 2px solid;
+    background-color: antiquewhite;
+    border-radius: 100% / 10%;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.75);
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+}
+
+.page_d2 {
+    float: right;
+    display: table-cell;
+    width: 50%;
+}
+
+.page_d1 {
+    width: 98%;
+    float: right;
+}
+
+.page_d {
+    margin: 0px 0px 0px 0px;
+    width: 98%;
+    float: right;
+}
+
+.page_g2 {
+    border-left: 0px solid;
+    display: table-cell;
+    width: 50%;
+    float: left;
+}
+
+.page_g1 {
+    border-left: 0px solid;
+    width: 98%;
+    float: left;
+}
+
+.page_g {
+    border-bottom: 0px solid;
+    width: 98%;
+    float: left;
+}
+
+table {
+    width: 100%;
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+
+tr {
+    width: 100%;
+    border: 0px solid black;
+}
+
+td {
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    padding: 0px;
+    border: 0px solid black;
+}
+
+input {
+    background-color: antiquewhite;
+    border: 0px solid;
+    border-bottom: 1px solid
+}
+
+input:hover {
+    border: 0px solid
+}
+
+.red {
+    background-color: rgb(255, 215, 215);
+}
+
+.yellow {
+    background-color: rgb(250, 255, 215);
+}
+
+.green {
+    background-color: rgb(225, 255, 215);
+}
+
+#arrow {
+    transition: 1s;
+    cursor: pointer;
+}
+
+#arrow:hover {
+    transform: rotate(180deg);
+    background-color: chartreuse;
+    border-radius: 100%;
+}
+
+.gris-ue {
+    background-color: rgb(236, 180, 104);
+}
+
+.gris {
+    background-color: rgb(244, 211, 166);
+}
+
+.animation {
+    display: block;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    background-color: white;
+    animation-name: blanc;
+    animation-duration: 0.5s;
+}
+
+@keyframes blanc {
+    from {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 0;
+    }
+    to {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+}
+
+button {
+    border: 0px solid;
+    background-color: beige;
+}
+
+.titre {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.titre p {
+    border-bottom: 1px solid;
+    width: 300px;
+    margin: auto;
+}
+
+.centre .img {
+    width: 30%;
+    height: 200px;
+}
+
+.img {
+    background-size: cover;
+    display: inline-block;
+    vertical-align: top;
+    visibility: visible;
+    position: relative;
+}
+
+.img .profil {
+    transition: 1s;
+    width: 100%;
+    max-width: 200px;
+}
+
+.img .profil:hover {
+    opacity: 0;
+}
+
+.img .profil:hover~#click {
+    opacity: 0;
+}
+
+.img .profil:hover~p {
+    opacity: 1;
+}
+
+.img p {
+    opacity: 0;
+    transition: 1s;
+    position: relative;
+    top: -100%;
+}
+
+.click {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 25px;
+    transform: translate(0px, -35px);
+}
+
+#personne1,
+#personne2,
+#personne3 {
+    display: none;
+    transition: 1s;
+}
+
+.centre {
+    margin: 20px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.personne .text {
+    margin: 30px 10px;
+}
+
+.text {
+    margin: 30px auto;
+}
+
+#projet {
+    display: none
+}
+
+#nous,
+#projet {
+    margin-top: 50px;
+}
+
+#info_help {
+    max-width: calc(100% - 10px);
+}

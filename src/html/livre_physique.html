@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Projet Web L2</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../css/livre.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
+    <script>
+        var ueList = ['PELEC', 'SYSNUM', 'THERMO'];
+        var ue = 'PHYSIQUE';
+    </script>
+    <script src="../js/calcul.js"></script>
+    <script src="../js/header.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul class="topnav" id="menu">
+            <li id="button_menu"><img src="../img/menu.png" alt="menu" width="90" onclick="toggleHeader()"></li>
+            <li>
+                <a href="index.html"><img src="../img/menu_home.png" alt="menu_home" width="90"></a>
+            </li>
+            <li>
+                <a href="bureau.html"><img src="../img/menu_bureau.png" alt="menu_bureau" width="90"></a>
+            </li>
+            <li>
+                <a href="info.html"><img src="../img/menu_info.png" alt="menu_info" width="90"></a>
+            </li>
+        </ul>
+    </header>
+    <div class="zone_livre">
+        <div class="livre">
+            <div class="page_d2">
+                <div class="page_d1">
+                    <div class="page_d">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/logo_efrei.png" alt="logo_efrei" width="55"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>formation</td>
+                                <td>coeff</td>
+                                <td>type</td>
+                            </tr>
+                            <tr class="gris-ue">
+                                <td>UE PHYSIQUE</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <!-- Propagation Electromagnetique -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="PELEC_moyenne_coef">1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan=2>propagation électromagnétique</td>
+                                <td id="PELEC_CE_coef">0.4</td>
+                                <td>CE</td>
+                            </tr>
+                            <tr>
+                                <td id="PELEC_DE_coef">0.6</td>
+                                <td>DE</td>
+                            </tr>
+                            <!-- systèmes numériques -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="SYSNUM_moyenne_coef">2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan=4>systèmes numériques</td>
+                                <td id="SYSNUM_CE_coef">0.2</td>
+                                <td>CE</td>
+                            </tr>
+                            <tr>
+                                <td id="SYSNUM_DE_coef">0.4</td>
+                                <td>DE</td>
+                            </tr>
+                            <tr>
+                                <td id="SYSNUM_PRJ_coef">0.2</td>
+                                <td>PRJ</td>
+                            </tr>
+                            <tr>
+                                <td id="SYSNUM_TP_coef">0.2</td>
+                                <td>TP</td>
+                            </tr>
+                            <!-- thermodynamiques -->
+                            <tr class="gris">
+                                <td></td>
+                                <td id="THERMO_moyenne_coef">2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan=3>thermodynamiques</td>
+                                <td id="THERMO_CE_coef">0.2</td>
+                                <td>CE</td>
+                            </tr>
+                            <tr>
+                                <td id="THERMO_DE_coef">0.5</td>
+                                <td>DE</td>
+                            </tr>
+                            <tr>
+                                <td id="THERMO_TAI_coef">0.3</td>
+                                <td>TAI</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="page_g2">
+                <div class="page_g1">
+                    <div class="page_g">
+                        <div class="ligne">
+                            <table>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="bureau.html"><img id="arrow" src="../img/icon_arrow_back.png" alt="icon_arrow_back" height="21"></a>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>note</td>
+                                    <td>5</td>
+                                    <td>10</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gris-ue">
+                                    <td id="PHYSIQUE_moyenne">0</td>
+                                    <td id="PHYSIQUE_moyenne_5">5</td>
+                                    <td id="PHYSIQUE_moyenne_10">10</td>
+                                    <td id="PHYSIQUE_moyenne_15">15</td>
+                                </tr>
+                                <!-- Propagation Electromagnetique -->
+                                <tr class="gris">
+                                    <td id="PELEC_moyenne">0</td>
+                                    <td id="PELEC_moyenne_5">5</td>
+                                    <td id="PELEC_moyenne_10">10</td>
+                                    <td id="PELEC_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="PELEC_CE" type="text" placeholder="note" /></td>
+                                    <td id="PELEC_CE_5" class="red">5</td>
+                                    <td id="PELEC_CE_10" class="yellow">10</td>
+                                    <td id="PELEC_CE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="PELEC_DE" type="text" placeholder="note" /></td>
+                                    <td id="PELEC_DE_5" class="red">5</td>
+                                    <td id="PELEC_DE_10" class="yellow">10</td>
+                                    <td id="PELEC_DE_15" class="green">15</td>
+                                </tr>
+                                <!-- SYSTEME NUM -->
+                                <tr class="gris">
+                                    <td id="SYSNUM_moyenne">0</td>
+                                    <td id="SYSNUM_moyenne_5">5</td>
+                                    <td id="SYSNUM_moyenne_10">10</td>
+                                    <td id="SYSNUM_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="SYSNUM_CE" type="text" placeholder="note" /></td>
+                                    <td id="SYSNUM_CE_5" class="red">5</td>
+                                    <td id="SYSNUM_CE_10" class="yellow">10</td>
+                                    <td id="SYSNUM_CE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="SYSNUM_DE" type="text" placeholder="note" /></td>
+                                    <td id="SYSNUM_DE_5" class="red">5</td>
+                                    <td id="SYSNUM_DE_10" class="yellow">10</td>
+                                    <td id="SYSNUM_DE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="SYSNUM_PRJ" type="text" placeholder="note" /></td>
+                                    <td id="SYSNUM_PRJ_5" class="red">5</td>
+                                    <td id="SYSNUM_PRJ_10" class="yellow">10</td>
+                                    <td id="SYSNUM_PRJ_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="SYSNUM_TP" type="text" placeholder="note" /></td>
+                                    <td id="SYSNUM_TP_5" class="red">5</td>
+                                    <td id="SYSNUM_TP_10" class="yellow">10</td>
+                                    <td id="SYSNUM_TP_15" class="green">15</td>
+                                </tr>
+                                <!-- THERMO -->
+                                <tr class="gris">
+                                    <td id="THERMO_moyenne">0</td>
+                                    <td id="THERMO_moyenne_5">5</td>
+                                    <td id="THERMO_moyenne_10">10</td>
+                                    <td id="THERMO_moyenne_15">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="THERMO_CE" type="text" placeholder="note" /></td>
+                                    <td id="THERMO_CE_5" class="red">5</td>
+                                    <td id="THERMO_CE_10" class="yellow">10</td>
+                                    <td id="THERMO_CE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="THERMO_DE" type="text" placeholder="note" /></td>
+                                    <td id="THERMO_DE_5" class="red">5</td>
+                                    <td id="THERMO_DE_10" class="yellow">10</td>
+                                    <td id="THERMO_DE_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td><input id="THERMO_TAI" type="text" placeholder="note" /></td>
+                                    <td id="THERMO_TAI_5" class="red">5</td>
+                                    <td id="THERMO_TAI_10" class="yellow">10</td>
+                                    <td id="THERMO_TAI_15" class="green">15</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="animation"></div>
+
+    <footer>
+        <p>Membre</p>
+        <p>Séverin Jean-Benoit Robin</p>
+        <p>© 2020 Les statisticiens. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        createUpdate('PELEC', ['CE', 'DE']);
+        createUpdate('SYSNUM', ['CE', 'DE', 'PRJ', 'TP']);
+        createUpdate('THERMO', ['CE', 'DE', 'TAI']);
+    </script>
+</body>
+
+</html>
